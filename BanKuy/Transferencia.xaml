@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BanKuy.Transferencia">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Orientation="Horizontal" Background="#FFCB69">
+                <Image x:Name="icono" Source="logoBank"  WidthRequest="75" HorizontalOptions="Start"/>
+                <Label Text="BanKuy" HorizontalOptions="CenterAndExpand" FontSize="Large" FontFamily="{StaticResource Bohemian Soul}" 
+                       TextColor="#1D4E89" />
+            </StackLayout>
+
+            <Label Text="Transferencias" TextColor="#542B21" FontSize="25" FontFamily="{StaticResource BodoniXT}" Margin="10" HorizontalTextAlignment="Center"/>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand">
+                <Frame HeightRequest="115" WidthRequest="420"  BackgroundColor="#E8F3FF" Padding="10" HasShadow="True" Margin="20,10" CornerRadius="10"
+                    HorizontalOptions="CenterAndExpand">
+                    <StackLayout>
+                        <Label Text="Desde" Margin="15,0" FontSize="14" TextColor="Black" FontFamily="{StaticResource Hack-Regular}"></Label>
+                        <Label Text="Karina Loor" FontAttributes="Bold" Margin="15,0" FontSize="18" TextColor="Black" FontFamily="{StaticResource Hack-Bold}"></Label>
+                        <Label Text="Nro. 1234567899" Margin="15,0" x:Name="idcuenta"  FontSize="14" TextColor="Black" FontFamily="{StaticResource Hack-Regular}"></Label>
+                        <Label HorizontalOptions="EndAndExpand" Text="$15,30" FontAttributes="Bold" Margin="15,0" FontSize="18" TextColor="Black" FontFamily="{StaticResource Hack-Bold}"></Label>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+
+            <Label Text="Escoja el tipo de transferencia:" TextColor="#542B21" Margin="35,20" FontSize="14" FontFamily="{StaticResource Hack-Regular}"/>
+            <Button x:Name="btnDirecta" Clicked="btnDirecta_Clicked"  BackgroundColor="#1D4E89" Margin="80,10" 
+                    TextTransform="None" FontSize="13" Text="Transferencia Directa" CornerRadius="10" TextColor="#E8F3FF" FontFamily="{StaticResource Hack-Bold}"/>
+            <Button x:Name="btnInterbancaria" Clicked="btnInterbancaria_Clicked" Text="Transferencia Interbancaria" 
+                    BackgroundColor="#1D4E89" FontSize="13" TextTransform="None" Margin="80,10" CornerRadius="10" TextColor="#E8F3FF" FontFamily="{StaticResource Hack-Bold}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

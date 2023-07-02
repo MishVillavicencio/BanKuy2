@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BanKuy.LoginUserPass">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Orientation="Horizontal" Background="#FFCB69">
+                <Image x:Name="icono" Source="logoBank"  WidthRequest="75" HorizontalOptions="Start"/>
+                <Label Text="BanKuy" HorizontalOptions="CenterAndExpand" FontSize="Large" FontFamily="{StaticResource Bohemian Soul}" 
+                       TextColor="#1D4E89" />
+            </StackLayout>
+
+            <StackLayout>
+                <Label Text="Ingresa tu usuario y contraseña" TextColor="#542B21" FontSize="Small" Margin="50" HorizontalOptions="CenterAndExpand" FontFamily="{StaticResource Hack-Regular}"></Label>
+                <Frame Padding="0" Margin="70,0,70,0" BorderColor="#542B21">
+                    <Entry x:Name="txtCorreo" FontSize="13" Placeholder="Usuario" Margin="30,10" FontFamily="{StaticResource Hack-Italic}"/>
+                </Frame>
+                <Frame Padding="0" Margin="70,20" BorderColor="#542B21">
+                    <Entry x:Name="txtCedula" FontSize="13" Placeholder="Contraseña" Margin="30,10" FontFamily="{StaticResource Hack-Italic}"/>
+                </Frame>
+                <Button Margin="120,30,120,0" Text="Ingresar" HeightRequest="50" BackgroundColor="#1D4E89" 
+                        TextColor="White" FontFamily="{StaticResource Hack-Bold}" CornerRadius="30" Clicked="btnIngresarUser_Clicked" x:Name="btnIngresarUser"
+                        TextTransform="None"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

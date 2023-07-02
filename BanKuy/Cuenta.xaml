@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BanKuy.Cuenta">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Orientation="Horizontal" Background="#FFCB69">
+                <Image x:Name="icono" Source="logoBank"  WidthRequest="75" HorizontalOptions="Start"/>
+                <Label Text="BanKuy" HorizontalOptions="CenterAndExpand" FontSize="Large" FontFamily="{StaticResource Bohemian Soul}" 
+                       TextColor="#1D4E89" />
+            </StackLayout>
+            <Image Source="imgCuenta" WidthRequest="475" Margin="0,0,0,10"/>
+            <Label Text="¡Abre una cuenta!"  FontFamily="{StaticResource Hack-Bold}" 
+                   TextColor="#1D4E89" FontSize="20" Margin="50,15" HorizontalTextAlignment="Center" />
+            <Label Text="De manera simple y sin salir de casa en solo 5 minutos sin filas ni papeleos, obtendrás la cuenta que necesitas" 
+                   Margin="45,0" HorizontalTextAlignment="Center" FontSize="12" FontFamily="{StaticResource Hack-Regular}" TextColor="#542B21"/>
+            
+            <Label Text="Beneficios" TextColor="#1D4E89" FontSize="20"  FontFamily="{StaticResource Hack-Bold}" Margin="20,25"/>
+            <Label Text="* Administra tu cuenta desde la App." Margin="50,15" HorizontalTextAlignment="Start" 
+                   TextColor="#542B21" FontFamily="{StaticResource Hack-Regular}" FontSize="14"/>
+            <Label Text="* Transfiere dinero sin hacer filas." Margin="50,15" HorizontalTextAlignment="Start" 
+                   TextColor="#542B21" FontFamily="{StaticResource Hack-Regular}" FontSize="14"/>
+            <Label Text="* Realiza retiros en cualquier cajero." Margin="50,15" HorizontalTextAlignment="Start" 
+                   TextColor="#542B21" FontFamily="{StaticResource Hack-Regular}" FontSize="14"/>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
